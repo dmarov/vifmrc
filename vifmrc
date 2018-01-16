@@ -1,0 +1,18 @@
+
+" left side align
+set viewcolumns=-{name}
+
+" right side align
+" set viewcolumns={name}
+
+" dynamic align
+" set viewcolumns=*{name}
+" set viewcolumns=-100{name},20.15{ext}
+" set viewcolumns=-80%{name},15%{ext},5%{mtime}
+" set viewcolumns=-80%{name},20%{ext}
+" set viewcolumns=-{name},{ext},{mtime}
+set viewcolumns=-{name}..,{ext}
+
+colorscheme MyDefault
+
+" colorscheme ForBin ~/bin
