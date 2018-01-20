@@ -492,3 +492,4 @@ filextype *
     \ {Open with nvim in terminal} 
     \ xfce4-terminal --maximize --command "nvim %c" &;
 
+command! term xfce4-terminal --maximize &;
