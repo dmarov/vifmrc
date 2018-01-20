@@ -11,8 +11,16 @@ set viewcolumns=-{name}
 " set viewcolumns=-80%{name},15%{ext},5%{mtime}
 " set viewcolumns=-80%{name},20%{ext}
 " set viewcolumns=-{name},{ext},{mtime}
-set viewcolumns=-{name}..,{ext}
+
+" set viewcolumns=-{name}..,{ext}
+set viewcolumns=-{name},{ext}
+
+" one panel mode
+" :only
+" :savedirs
+" :zo
 
 colorscheme MyDefault
 
+windo normal za
 " colorscheme ForBin ~/bin
