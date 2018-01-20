@@ -474,7 +474,7 @@ set viewcolumns=-{name},{ext}
 
 filextype *.zsh,*.sh,*.txt,.*,*.html,*.tpl,*.htm,*.css,*.js,*.scss
     \ {Open with nvim in terminal}
-    \ editor.zsh %c &
+    \ xfce4-terminal --maximize --command "nvim %c" &;
 
 filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx
     \ {Open with libreoffice}
@@ -490,5 +490,5 @@ filextype *.pdf
 
 filextype *
     \ {Open with nvim in terminal} 
-    \ editor.zsh %c &
+    \ xfce4-terminal --maximize --command "nvim %c" &;
 
