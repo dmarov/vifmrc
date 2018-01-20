@@ -479,3 +479,16 @@ filextype *.zsh,*.sh,*.txt,.*,*.html,*.tpl,*.htm,*.css,*.js,*.scss
 filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx
     \ {Open with libreoffice}
     \ libreoffice %f &
+
+filextype *.mp4,*.avi,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob
+    \ {Open with smplayer}
+    \ smplayer %c &
+
+filextype *.pdf
+    \ {Open with atril}
+    \ atril --fullscreen %c &
+
+filextype *
+    \ {Open with nvim in terminal} 
+    \ editor.zsh %c &
+
