@@ -472,9 +472,9 @@ nnoremap <f8> :delete<cr>
 windo normal zo
 set viewcolumns=-{name},{ext}
 
-filextype *.zsh,*.sh,*.txt,.*,*.html,*.tpl,*.htm
+filextype *.zsh,*.sh,*.txt,.*,*.html,*.tpl,*.htm,*.css,*.js,*.scss
     \ {Open with nvim in terminal}
-    \ open-text-editor.zsh %c &
+    \ editor.zsh %c &
 
 filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx
     \ {Open with libreoffice}
