@@ -1,5 +1,3 @@
-" colorscheme ForBin ~/bin
-"
 " filetype *.html, *.htm, *.php, *.sh, *.zsh, .* nvim
 " filextype *.zsh *.sh *.txt firefox &
 "
