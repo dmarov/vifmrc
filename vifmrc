@@ -482,9 +482,17 @@ filextype *.mp4,*.avi,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob
     \ {Open with smplayer}
     \ smplayer %c &
 
+filextype *.mp3,*.flac
+    \ {Open with audacious}
+    \ audacious %c &
+
 filextype *.pdf
     \ {Open with atril}
     \ atril --fullscreen %c &
+
+filextype *.zip
+    \ {Extract with 7zip}
+    \ mkdir .zip && 7z -o.zip x %c &
 
 filextype *
     \ {Open with nvim in terminal} 
