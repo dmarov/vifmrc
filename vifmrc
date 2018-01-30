@@ -494,6 +494,10 @@ filextype *.zip
     \ {Extract with 7zip}
     \ mkdir .zip && 7z -o.zip x %c &
 
+filextype *.jpg,*.png
+    \ {Open With geeqie}
+    \ geeqie %c &
+
 filextype *
     \ {Open with nvim in terminal} 
     \ xfce4-terminal --maximize --command "nvim %c" &;
