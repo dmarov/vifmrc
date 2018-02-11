@@ -65,7 +65,7 @@ set novimhelp
 
 " Selected color scheme
 
-colorscheme MyDefault
+colorscheme zenburn
 " colorscheme Default
 
 " Format for displaying time in file list. For example:
