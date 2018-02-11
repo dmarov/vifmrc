@@ -65,8 +65,8 @@ set novimhelp
 
 " Selected color scheme
 
-colorscheme zenburn
-" colorscheme Default
+" colorscheme zenburn
+colorscheme MyDefault
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
