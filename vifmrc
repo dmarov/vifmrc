@@ -66,7 +66,7 @@ set novimhelp
 " Selected color scheme
 
 " colorscheme zenburn
-colorscheme MyDefault
+colorscheme MySuperTheme
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -476,7 +476,7 @@ nnoremap o :!nvim %f<cr>
 windo normal zo
 " set viewcolumns=-{name},{ext}
 
-filextype *.zsh,*.sh,*.txt,.*,*.html,*.tpl,*.htm,*.css,*.js,*.scss
+filextype *.sh,*.txt,.*,*.html,*.tpl,*.htm,*.css,*.js,*.scss, *.vue, *.json
     \ {Open with nvim in terminal}
     \ xfce4-terminal --maximize --command "nvim %c" &;
 
@@ -496,11 +496,7 @@ filextype *.pdf
     \ {Open with atril}
     \ atril --fullscreen %c &
 
-filextype *.zip
-    \ {Extract with 7zip}
-    \ mkdir .zip && 7z -o.zip x %c &
-
-filextype *.jpg,*.png
+filextype *.jpeg, *.jpg,*.png
     \ {Open With geeqie}
     \ geeqie %c &
 
@@ -508,10 +504,12 @@ filextype *.xmi
     \ {Open With umbrello}
     \ umbrello %c &
 
+filextype *.xml
+    \ {Open With umbrello}
+    \ xmlcopyeditor %c &
+
 filextype *
     \ {Open with nvim in terminal} 
     \ xfce4-terminal --maximize --command "nvim %c" &;
 
-
 command! term xfce4-terminal --maximize &;
-command! size du -h -c %f && sleep 5;
