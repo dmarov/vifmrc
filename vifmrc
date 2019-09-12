@@ -492,13 +492,13 @@ filextype *.mp3,*.flac
     \ {Open with audacious}
     \ audacious %c &
 
+filextype *.jpeg,*.jpg,*.png
+    \ {Open With sxiv}
+    \ sxiv %c &
+
 filextype *.pdf
     \ {Open with atril}
     \ atril --fullscreen %c &
-
-filextype *.jpeg, *.jpg,*.png
-    \ {Open With geeqie}
-    \ geeqie %c &
 
 filextype *.xmi
     \ {Open With umbrello}
